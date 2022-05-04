@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <meta name="description" content="Curriculum Vitae visant à promouvoir mon expérience en ligne">
+  <meta name="author" content="Jaros Ruddy">
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CV-Jaros Ruddy</title>
+</head>
+<body>
+  <header>
+    <!-- nav bar -->
+    <div class="nav">
+      <input type="checkbox" id="nav-check">
+      <div class="nav-header">
+        <div class="nav-title">
+          Jaros Ruddy
+        </div>
+      </div>
+      <div class="nav-btn">
+        <label for="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+      <div class="nav-links">
+        <a href="#apropos" onclick="triggerOff()">A Propos</a>
+        <a href="#competence" onclick="triggerOff()">Compétences</a>
+        <a href="#experience" onclick="triggerOff()">Expériences</a>
+        <a href="#formation" onclick="triggerOff()">Formations</a>
+        <a href="#portfolio" onclick="triggerOff()">Portfolio</a>
+      </div>
+    </div>
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+  </header>
+  <!-- profil -->
+  <div class="profilParent">
+    <div class="profil">
+      <picture>
+        <source media="(min-width: 768px)" srcset="img/ruddyj.jpg">
+        <source media="(max-width: 767px)" srcset="img/ruddyj.jpg">
+        <img src="img/ruddyj.jpg" alt="photo de profil">
+      </picture>
+      <!-- <img src="img/ruddy2.webp" alt=""> -->
+      <div class="texte">
+        <h1>Jaros Ruddy</h1>
+        <p> Technicien supérieure systèmes et réseaux</p>
+        <p class="sociaux"><span>Téléphone </span><i class="fas fa-arrow-right"></i> 07.86.06.47.94</p>
+        <p class="sociaux"><span>Email </span><i class="fas fa-arrow-right"></i> jarosr327@gmail.com</p>
+        <p class="sociaux"><span>Ville </span><i class="fas fa-arrow-right"></i> 59300 Valenciennes</p>
+        <p class="sociaux"><span>Linkedin </span><i class="fas fa-arrow-right"></i> @ruddy-jaros</p>
+      </div>
+      <div class="reseaux social-btns">
+        <a class="btn phone" href="tel:+33786064794">
+          <i class="fa fas fa-phone-square-alt fa-3x"></i>
+        </a>
+        <a class="btn mail" href="mailto:jaros.ruddy.simplon.59@gmail.com">
+          <i class="fa fas fa-envelope fa-3x"></i>
+        </a>
+        <a class="btn location" href="https://goo.gl/maps/3ZEivt7PX74cgjtGA" target="_blank">
+          <i class="fa fas fa-map-marker-alt fa-3x"></i>
+        </a>
+        <a class="btn linkedin" href="https://www.linkedin.com/in/ruddy-jaros/" target="_blank">
+          <i class="fa fab fa-linkedin fa-3x"></i>
+        </a>
+        <a class="btn github" href="https://ruddyj59.github.io/cv/" target="_blank">
+          <i class="fa fab fa-github fa-3x"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- prsentation -->
+  <div class="presentation" id="apropos">
+    <h2>Profil Personel</h2>
+    <p>Intéressé par le domaine du numérique, j'ai décidé de développer mes connaissances et mes compétences à travers l'atelier numérique de l'association Ageval. Toujours désireux d'apprendre, j'ai développé mon savoir-être à travers mes expériences précédentes tels que la motivation,je suis organiser, et le travail de groupe j'ai éféctuer une formation de médiateur numérique chez Simplon Actuellement je suis en formation Technicien supérieure systèmes et réseaux et je suis a la recherche d'un stage..</p>
+    <a class="face-button" href="cv-rudy.png" download="cv-rudy.png" target="_blank">
+      <div class="face-primary">
+        <span class="icon fa fa-cloud"></span>
+        Télécharger mon CV
+      </div>
+      <div class="face-secondary">
+        <span class="icon fa fa-hdd-o"></span>
+        Merci d'avance
+      </div>
+    </a>
+  </div>
+  <!-- competence -->
+  <div class="competence" id="competence">
+    <h2>competences</h2>
+    <!--switch-card -->
+      <div class="skills-switcher">
+        <input class="fieldset" id="toggle" type="checkbox"/>
+        <label class="fieldset" id="toggle-label" for="toggle">Soft Skills</label>
+        <label class="fieldset" id="toggle-label" for="toggle">Hard Skills</label>
+        <div class="card-view">
+          <div class="card">
+            <div class="face">
+              <ul class="soft">
+                <li>Travail en équipe</li>
+                <li>Capacité à s'adapter</li>
+                <li>ouverture a la nouveauté</li>
+                <li>Communication oral</li>
+                <li>Autonomie</li>
+                <li>Bonne pédagogie</li>
+              </ul>
+            </div>
+            <div class="face">
+              <ul class="hard">
+                <li><i class="fab fa-html5 fa-5x"></i></li>
+                <li><i class="fab fa-css3-alt fa-5x"></i></li>
+                <li>
+                  <img src="img/responsive.webp" alt="">
+                </li>
+                <li>
+                  <img src="img/adobe-photoshop.webp" alt="">
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="timeline" id="experience">
+    <h2>experiences</h2>
+    <!-- exp1 -->
+    <div class="timeline__event animated fadeInUp delay-3s timeline__event--type1">
+      <div class="timeline__event__icon ">
+      </div>
+      <div class="timeline__event__date">
+        Association AGEVAL Valenciennes | 09/2021 - 04/2022
+      </div>
+      <div class="timeline__event__content ">
+        <div class="timeline__event__title">
+          Atelier Numérique CDDI
+        </div>
+        <div class="timeline__event__description">
+          <p>Utilisation des languages de programmation html et css pour la conception de site web.
+            Création de formulaire de contact et utilisation du responsive.
+            Création du cv papier et numérique.Création d'afiche avec la suite adobe.Création de site internete avec wordpresse.Création de présentation animé avec la suite google</p>
+        </div>
+      </div>
+    </div>
+    <!-- exp2 -->
+    <div class="timeline__event animated fadeInUp delay-2s timeline__event--type2">
+        <div class="timeline__event__icon">
+        </div>
+        <div class="timeline__event__date">
+          Log's Logistique Anzin | 05/2021 - 09/2021
+        </div>
+        <div class="timeline__event__content">
+          <div class="timeline__event__title">
+            PRÉPARATEUR DE COMMANDE
+          </div>
+          <div class="timeline__event__description">
+            <p>Contrôle des flux de marchandises entrants & sortants / Préparation
+              des articles / enregistrement par scanner / mise sous palette</p>
+          </div>
+        </div>
+      </div>
+    <!-- exp3 -->
+    <div class="timeline__event animated fadeInUp delay-1s timeline__event--type3">
+          <div class="timeline__event__icon">
+          </div>
+          <div class="timeline__event__date">
+            Restauration collective Bapaume | 2019 - 04/2021
+          </div>
+          <div class="timeline__event__content">
+            <div class="timeline__event__title">
+              MAGASINIER
+            </div>
+            <div class="timeline__event__description">
+              <p>Contrôle des températures pour les produits alimentaire. Rangement
+                en base de donner via code produits.
+              </p>
+            </div>
+          </div>
+        </div>
+    <!-- exp4 -->
+    <div class="timeline__event animated fadeInUp delay-3s timeline__event--type4">
+          <div class="timeline__event__icon">
+          </div>
+          <div class="timeline__event__date">
+            Pocheco Douai | 2014 -2016
+          </div>
+          <div class="timeline__event__content">
+            <div class="timeline__event__title">
+              MANUTENTIONNAIRE
+            </div>
+            <div class="timeline__event__description">
+              <p>Rangement des stock des produits avec manette analogique et
+                contrôle qualité</p>
+            </div>
+          </div>
+        </div>
+    <!-- exp5 -->
+    <div class="timeline__event animated fadeInUp delay-1s timeline__event--type5">
+            <div class="timeline__event__icon">
+            </div>
+            <div class="timeline__event__date5">
+              Nicols Caudry | 2013-2014
+            </div>
+            <div class="timeline__event__content">
+              <div class="timeline__event__title">
+                AGENT DE CONDITIONNEMENT
+              </div>
+              <div class="timeline__event__description">
+                <p>Mise sous palette et conditionnement avec machine hydraulique
+                </p>
+              </div>
+            </div>
+          </div>
+    <!-- exp6 -->
+    <div class="timeline__event animated fadeInUp delay-1s timeline__event--type6">
+            <div class="timeline__event__icon">
+            </div>
+            <div class="timeline__event__date6">
+              Lidl Caudry | 2011-2012
+            </div>
+            <div class="timeline__event__content">
+              <div class="timeline__event__title">
+                AGENT DE PRODUCTION
+              </div>
+              <div class="timeline__event__description">
+                <p>Programmation par commande digital de la machines et réception
+                  des produits
+                </p>
+              </div>
+            </div>
+          </div>
+    <!-- exp7 -->
+    <div class="timeline__event animated fadeInUp timeline__event--type">
+            <div class="timeline__event__icon">
+            </div>
+            <div class="timeline__event__date0">
+              Sima-Stock St Python | 2010-2011
+            </div>
+            <div class="timeline__event__content">
+              <div class="timeline__event__title">
+                MANUTENTIONNAIRE
+              </div>
+              <div class="timeline__event__description">
+                <p>Mise sur palette de la marchandise vérification des produits par
+                  référencement numérique
+                </p>
+              </div>
+            </div>
+          </div>
+  </div>
+  <!-- formation -->
+  <div class="formation" id="formation">
+    <h2>formations</h2>
+    <div class="scrolling-wrapper-flexbox">
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h2>2018-2019</h2>
+            <h3>lycée michelet</h3>
+            <p>Cap Logistique caces 1,3,5 +Habilitation électrique </p>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="box">
+        <div class="content">
+          <h2>2016-2017</h2>
+          <h3>Lycée Michelet</h3>
+          <p>Bac pro Comptabilité et bep Comptabilité</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- portfolio -->
+<div class="portfolio" id="portfolio">
+  <h2>portfolio</h2>
+  <div class='caroussel_diapo'>
+  <input checked id="carou_un" name="rotation" type="radio">
+  <label for="carou_un"></label>
+  <input id="carou_deux" name="rotation" type="radio">
+  <label for="carou_deux"></label>
+  <input id="carou_trois" name="rotation" type="radio">
+  <label for="carou_trois"></label>
+  <input id="carou_quatre" name="rotation" type="radio">
+  <label for="carou_quatre"></label>
+  <div class="contenu_carou">
+  <div class="caroussel">
+      <img src="img/restau.webp" alt="" onclick="window.location.href = 'https://ruddyj59.github.io/restaurant/';">
+      <img src="img/ovni.webp" alt="">
+      <img src="img/affiche.webp" alt="">
+      <img src="img/cafe.webp" alt="" onclick="window.location.href = 'https://ruddyj59.github.io/site-cafe/';">
+  </div>
+  </div>
+  </div>
+</div>
+<!-- copyryte -->
+<footer>
+  <div class="copyryte">
+    <a href="tel:+33786064794">
+      <i class="fa fas fa-phone-square-alt fa-3x"></i>
+    </a>
+    <a href="mailto:jarosr327@gmail.com">
+      <i class="fa fas fa-envelope fa-3x"></i>
+    </a>
+    <a href="https://goo.gl/maps/3ZEivt7PX74cgjtGA" target="_blank">
+      <i class="fa fas fa-map-marker-alt fa-3x"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/ruddy-jaros/" target="_blank">
+      <i class="fa fab fa-linkedin fa-3x"></i>
+    </a>
+    <a href="https://ruddyj59.github.io/cv/" target="_blank">
+    <i class="fa fab fa-github fa-3x"></i>
+    </a>
+  </div>
+  <div class="copy">
+    <p>Copyright © 2021 jaros ruddy</p>
+  </div>
+</footer>
+<script src="https://kit.fontawesome.com/45e38e596f.js" crossorigin="anonymous"></script>
+<script src="js/nav-fermeture.js"></script>
+<script src="js/scroll.js" charset="utf-8"></script>
+</body>
+</html>
